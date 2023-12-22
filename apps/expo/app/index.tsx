@@ -21,8 +21,8 @@ export default function Screen() {
         position="absolute"
         bottom={'$6'}
         zIndex={'$zIndex.1'}
-        left={0}
-        right={0}
+        left={'$4'}
+        right={'$4'}
         ai={'center'}
       >
         <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />

@@ -17,14 +17,14 @@ type TabNavigationProps = {
 export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
   return (
     <Tabs value={activeTab} onValueChange={onTabChange}>
-      <Tabs.List>
-        <Tabs.Tab value={TAB_IDS.RECIPES}>
+      <Tabs.List width={'100%'} justifyContent="space-evenly">
+        <Tabs.Tab value={TAB_IDS.RECIPES} width={'50%'}>
           <XStack ai="center" space="$2">
             <Carrot size={18} />
             <SizableText>Recipes</SizableText>
           </XStack>
         </Tabs.Tab>
-        <Tabs.Tab value={TAB_IDS.SHOPPING_LIST}>
+        <Tabs.Tab value={TAB_IDS.SHOPPING_LIST} width={'50%'}>
           <XStack ai="center" space="$2">
             <ListChecks size={18} />
             <SizableText>Shopping List</SizableText>

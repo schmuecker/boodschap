@@ -20,7 +20,7 @@ export function RecipesScreen() {
 
   return (
     <YStack space="$4">
-      <H1 onPress={console.log}>Recipes</H1>
+      <H1>Recipes</H1>
       <Separator />
     </YStack>
   )
